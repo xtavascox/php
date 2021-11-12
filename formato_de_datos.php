@@ -2,7 +2,7 @@
 
 //Alterar
 
-$text="<h1>PHP es un LENGUAJE</h1>";
+$text="PHP es un LENGUAJE , año 2020, programaciòn";
 
 // echo strtolower($text);
 // echo strtoupper($text);
@@ -15,4 +15,7 @@ $slug=str_replace('PHP','javascript',$text);
 
 $code=39;
 // echo str_pad($code,8,'#',STR_PAD_BOTH);
-echo $text;
+// echo strip_tags($text);
+
+echo mb_strtoupper($text);
+
