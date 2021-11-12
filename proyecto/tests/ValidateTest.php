@@ -12,4 +12,9 @@
             $email=Validate::email('i@@imorsoft.com');
             $this->assertFalse($email);
         }
-    }
+
+        public function test_password(){
+            $password=Validate::password('A1234#5');
+            $this->assertTrue($password);           
+        }
+    } 
